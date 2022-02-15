@@ -8,7 +8,8 @@ fun pal_palindromo () {
     val reverso = palavra.reversed()
     if (palavra == reverso) {
         println("é palindromo")
-    } else {
+    }
+    else if (palavra != reverso) {
         println("não palindromo")
     }
     println("Cotinuar?")
@@ -27,9 +28,9 @@ fun pal_palindromo () {
 fun media () {
     println("Valor'x':")
     var input = Scanner(System.`in`)
-    var x : Float = input.nextFloat()
+    var x = Integer.valueOf(readLine()).toFloat()
     println("Valor'y':")
-    var y : Float = input.nextFloat()
+    var y= Integer.valueOf(readLine()).toFloat()
     var resultado : Float = (x+y)/2
     println(resultado)
     println("Cotinuar?")
