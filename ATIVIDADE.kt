@@ -1,4 +1,3 @@
-import com.sun.xml.internal.fastinfoset.algorithm.BooleanEncodingAlgorithm
 import java.util.*
 
 fun pal_palindromo () {
@@ -14,13 +13,11 @@ fun pal_palindromo () {
     }
     println("Cotinuar?")
     var continuar = Scanner(System.`in`)
-    println("[true]sim")
-    println("[false]não")
-    var seleciona = continuar.nextBoolean()
+    var seleciona = continuar.nextLine()
 
     when (seleciona) {
-        true -> println(main())
-        false -> println(encerrar())
+        ("sim"), ("s"), ("si") , ("yes"), ("y") , ("yeah"), ("okay") , ("okey dokey") , ("okeydokey") , ("continuar") -> println(main())
+        ("não") , ("nao") ,("no"), ("n") , ("never") , ("sair") -> println(encerrar())
     }
 }
 
@@ -35,22 +32,19 @@ fun media () {
     println(resultado)
     println("Cotinuar?")
     var continuar = Scanner(System.`in`)
-    println("[true]sim")
-    println("[false]não")
-    var seleciona = continuar.nextBoolean()
+    var seleciona = continuar.nextLine()
 
     when (seleciona) {
-            true -> println(main())
-            false -> println(encerrar())
+        ("sim"), ("s"), ("si") , ("yes"), ("y") , ("yeah"), ("okay") , ("okey dokey") , ("okeydokey") , ("continuar") -> println(main())
+        ("não") , ("nao") ,("no"), ("n") , ("never"), ("sair") -> println(encerrar())
     }
-    }
+}
 
 fun encerrar (){
     val menu = Scanner(System.`in`)
     println("Adeus! Foi um prazer servi-lo, mestre")
     menu.close()
 }
-
 
 fun main (){
     val menu = Scanner(System.`in`)
